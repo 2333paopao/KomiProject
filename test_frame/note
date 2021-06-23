@@ -1,0 +1,27 @@
+框架结构分层：
+1、business业务层：
+  按测试类型的不同存放了需要测试的功能函数，在test_api中调用了requests包，用来获取接口信息及提交请求。
+2、test_case测试用例层：
+  分为普通用例和unittest用例，每个测试用例的编写方法如下:
+  (1)从business层中调用功能函数
+  (2)执行功能函数，并通过元素操作方法获取实际结果
+  (3)进行断言
+  其中，unittest用例调用了unittest包，可以使用一些封装好的断言方法以及用例执行前后的操作（setUp、tearDown）
+  此外还用到了以下方法包：
+  WebDriver：用来获取driver，可以对页面上的元素进行操作
+  parameterized：用于对传入参数进行参数化操作
+  SikulixPython：用于获取页面图形及对图形进行操作
+  Select：用于对下拉选择框进行操作
+  WebDriverWait：用于设置页面等待时间
+  ActionChains：动作链，用来对鼠标进行拖拽操作
+3、test_perform用例执行层：
+  该层调用测试用例及utilities解析好的测试数据，将测试数据传入测试用例中，执行用例并将测试结果写入报告。
+  调用了HTMLTestRunner包，用于将unittcase断言出的测试结果写入html中并生成截图，可利用时间戳生成动态文件名。
+4、driver层：
+  该层封装了一个单例模式的webdriver获取方法，可以生成一个可供全局使用的driver，在执行页面操作的用例中可以直接调用。
+5、data测试数据层：
+  该层用来存放原始测试数据
+6、utilities数据解析层：
+  该层调用测试数据，根据用例中参数的传入格式进行解析，并将结果返回。
+7、result结果层：
+  该层用来存放测试报告。

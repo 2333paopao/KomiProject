@@ -1,0 +1,13 @@
+{
+  "test_data1":
+    {
+      "username": "admin",
+      "password": "Milor123",
+      "expect_result": "True"
+    },
+  "test_data2": {
+      "username": "Li",
+      "password": "12345",
+      "expect_result": "False"
+    }
+}

@@ -1,0 +1,4 @@
+2020-06-23 11:54:27.194 test_notepad.py[22] test_notepad -> Find Control Timeout: {Name: '计算器', ControlType: WindowControl}
+2020-06-23 12:29:43.280 test_notepad.py[25] test_notepad -> Find Control Timeout: {AutomationId: 'Item 1', ControlType: MenuItemControl}
+2020-06-23 12:30:09.758 test_notepad.py[25] test_notepad -> Find Control Timeout: {AutomationId: '文件(F)', ControlType: MenuItemControl}
+2020-06-23 14:01:00.034 test_notepad.py[25] test_notepad -> Find Control Timeout: {AutomationId: '文件(F)', ControlType: MenuItemControl}

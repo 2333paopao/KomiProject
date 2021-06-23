@@ -1,0 +1,3 @@
+2020-06-29 18:11:17.777 selenium_method.py[116] ActionChains -> Find Control Timeout: {Name: '打开', ControlType: WindowControl}
+2020-06-29 18:21:05.302 selenium_method.py[117] ActionChains -> Find Control Timeout: {Name: '打开', ControlType: WindowControl}
+2020-06-29 18:21:52.945 selenium_method.py[117] ActionChains -> Find Control Timeout: {Name: '打开', ControlType: WindowControl}
